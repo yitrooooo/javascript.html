@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<style type="text/css">
+body{
+	background-color: pink;
+}
+input{
+	width: 205px;
+	height: 55px;
+	color: black;
+	background-color: lightyellow;
+	border-radius: 25px;
+	font-weight: bold;
+}
+
+</style>
+<body>
+<script type="text/javascript">
+	document.write("This message is written when the page loads") 
+	document.write("<h1>Hello World!</h1>")
+
+	function message( )
+	{
+		alert("This alert box was called with the onload event")
+	} 
+	message()
+
+	function myfunction( )
+	{
+		alert("HELLO WORLD ")
+	} 
+	function ucapan(txt)
+	{
+		alert(txt)
+	} 
+
+	var d=new Date( )
+	var weekday= new
+	Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+	var monthname= new
+	Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+	document.write(weekday[d.getDay( )] + " ")
+	document.write(d.getDate( ) + ". ")
+	document.write(monthname[d.getMonth( )] + " ")
+	document.write(d.getFullYear( )) 
+
+	var n = prompt("Masukan nama anda:");
+	var c = confirm("Hai "+n+"! Apakah saya tampan?");
+	if (c == true) {
+ 		alert('Terima Kasih :D!!');
+	}else{
+ 		alert('Kenapa?!! :(');
+	}
+</script> 
+
+<form>
+	<input type="button" onclick="myfunction()" value="Call Function">
+	<p>Tekan Button di atas untuk memanggil function <b>myFunction()</b></p> 
+	<input type="button" onclick="ucapan('Good Morning!')" value="Selamat Pagi">
+	<input type="button" onclick="ucapan('Good Night!')" value="Selamat Malam"> 
+	<p>Ketika di tekan salah satu tombol maka fungsi akan di panggil dan pesan akan ditampilkan</p> 
+</form> 
+</body>
+</html>
